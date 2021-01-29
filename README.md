@@ -3,9 +3,12 @@
    
  - 计算机基础
     * 设计模式系列
+    * 计算机网络系列
  
  - Java知识
     * JVM系列
+    * JAVA 8 Action
+    * JAVA NIO
    
  - 开源项目
     * soul网关系列
