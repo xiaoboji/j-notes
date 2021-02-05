@@ -3,6 +3,9 @@
    
  - 计算机基础
     * 数据结构与算法系列
+       + [leetcode刷题记录](https://github.com/xiaoboji/j-leetcode)
+       + [数组、链表、跳表、栈、队列](https://github.com/xiaoboji/algorithm024/tree/main/Week_01/note)
+       + [哈希、树、堆、图](https://github.com/xiaoboji/algorithm024/tree/main/Week_02/note)
     * 计算机网络系列
     * 设计模式系列
        + [知识框架总述(三)【设计模式】](https://xiaoboji.blog.csdn.net/article/details/107478382)
