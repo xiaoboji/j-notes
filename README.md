@@ -63,7 +63,8 @@
         + [soul网关系列(十三):插件的初始化和请求处理流程](https://xiaoboji.blog.csdn.net/article/details/113361306)        
         + [soul网关系列(十四):divide插件源码解读](https://xiaoboji.blog.csdn.net/article/details/113408851)        
         + [soul网关系列(十五):协议类插件(springcloud、dubbo、sofa)源码解读](https://xiaoboji.blog.csdn.net/article/details/113449013)        
-        + [soul网关系列(十六):sign、waf插件源码解读](https://xiaoboji.blog.csdn.net/article/details/113622116)        
+        + [soul网关系列(十六):sign、waf插件源码解读](https://xiaoboji.blog.csdn.net/article/details/113622116) 
+        + [soul网关系列(十七):其它插件简述](https://xiaoboji.blog.csdn.net/article/details/113667355)   
       
     
  - 数据库系列
