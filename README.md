@@ -72,6 +72,7 @@
  - 工具使用
      * Git 
         + [Git常用命令](https://github.com/xiaoboji/j-notes/tree/main/Tools/Git/Git常用命令.md)
+        + [SSH配置](https://github.com/xiaoboji/j-notes/tree/main/Tools/Git/SSH.md)
      * Tomcat
         + [Tomcat安装部署war包](https://github.com/xiaoboji/j-notes/tree/main/Tools/Tomcat/Tomcat安装部署war包.md)
      * Maven
