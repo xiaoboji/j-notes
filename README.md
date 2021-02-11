@@ -37,6 +37,8 @@
        + [23种设计模式总结篇【理解及应用】](https://xiaoboji.blog.csdn.net/article/details/109993836)
  
  - Java知识
+    * Java源码学习
+        + [HashMap总结及源码学习](https://github.com/xiaoboji/algorithm024/tree/main/Week_02/homework/HashMap.md)
     * JVM系列
         + [JVM系列(一)JAVA概念和历史](https://xiaoboji.blog.csdn.net/article/details/110211274)
         + [JVM系列(二)JAVA内存模型](https://xiaoboji.blog.csdn.net/article/details/112504615)
