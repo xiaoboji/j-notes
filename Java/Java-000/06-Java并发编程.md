@@ -25,7 +25,7 @@ Thread.start()--JavaThread--OSthread--Stack--TLAB--启动--Thread#run()--终结
 
 run()就是一个普通的方法，只有执行了start()方法之后，才开始执行线程。
 
-4. java多线程
+4. java线程基础(☆)
 
 - 创建线程的两个办法 
     * new Thread()
@@ -59,4 +59,30 @@ public static void main(String[] args) {
 - 线程状态
 
    ![avatar](./pic/线程状态.jpg)
+   - runnable状态，CPU不忙的时候，可以立即执行
+   - Non-Runnable状态，和CPU此时没什么关系，被阻塞了
    
+- Thread类
+    * volatile String name;线程名称，诊断分析使用
+    * boolean daemon = false;后台守护线程标志-决定JVM优雅关闭
+    * Runnable target;任务(智能通过构造函数传入)
+    * synchronized void start();【协作】启动新线程并自动执行
+    * void join();【协作】等待某个线程执行完毕(来汇合)
+    * static native Thread currentThread();静态方法，获取当前线程信息
+    * static native void sleep(long millis);静态方法，线程睡眠并让出CPU时间片
+- wait & notify
+    * void wait();放弃锁+等待0ms+尝试获取锁
+    * void wait(long timeout,int nanos);放弃锁+wait+到时间自动唤醒/中途唤醒(精度:nanos>0则timeout++)
+    * native void wait(long timeout);放弃锁+wait+到时间自动唤醒/中途被唤醒(唤醒之后需要自动获取锁)
+    * native void notify();发送信号通知1个等待线程
+    * native void notifyAll();发送信息通知所有等待线程
+- Object#wait pk Thread.sleep
+    * Thread.sleep:释放CPU
+    * Object#wait:释放锁
+- Thread的状态改变操作
+    * Thread.sleep(long millis),一定是当前线程调用此方法，当前线程进入TIMED_WAITING状态，但不释放对象锁，millis后线程自动苏醒进入就绪状态，作用：给其他线程执行机会的最佳方式
+    * Thread.yield(),一定是当前线程调用此方法，当前线程放弃获取的CPU时间片，但不释放锁资源，由运行状态变成就绪状态，让os再次选择。
+    * t.join()/t.join(long millis),当前线程里调用其他线程t的join方法，当前线程进入WAITING/TIMED_WAITING状态，当前线程不会释放已经持有的对象锁，线程t执行完毕或者millis时间到，当前线程进入就绪状态。
+    * obj.wait(),当前线程调用对象的wait()方法，当前线程释放对象锁，进入等待队列，依靠notify()/notifyAll()唤醒或者wait(long timeout) timeout时间到自动唤醒。
+    * obj.notify()唤醒在此对象监视器上等待的单个线程，选择是任意性的，notifyAll()唤醒在此对象监视器上的所有等待的线程。
+- Thread的中端   
