@@ -6,8 +6,15 @@
  - 计算机基础
     * 数据结构与算法系列
         + [leetcode刷题记录](https://github.com/xiaoboji/j-leetcode)
-        + [数组、链表、跳表、栈、队列](https://github.com/xiaoboji/algorithm024/tree/main/Week_01/note)
-        + [哈希、树、堆、图](https://github.com/xiaoboji/algorithm024/tree/main/Week_02/note)
+        + [数组](https://github.com/xiaoboji/algorithm024/blob/main/Week_01/note/array.md)
+        + [链表](https://github.com/xiaoboji/algorithm024/blob/main/Week_01/note/list.md)
+        + [跳表](https://github.com/xiaoboji/algorithm024/blob/main/Week_01/note/skiplist.md)
+        + [栈](https://github.com/xiaoboji/algorithm024/blob/main/Week_01/note/stack.md)
+        + [队列](https://github.com/xiaoboji/algorithm024/blob/main/Week_01/note/queue.md)
+        + [哈希、映射、集合](https://github.com/xiaoboji/algorithm024/tree/main/Week_02/note/hash.md)
+        + [树、二叉树、二叉搜索树](https://github.com/xiaoboji/algorithm024/tree/main/Week_02/note/tree.md)
+        + [堆和堆排序](https://github.com/xiaoboji/algorithm024/tree/main/Week_02/note/heap.md)
+        + [图](https://github.com/xiaoboji/algorithm024/tree/main/Week_02/note/graph.md)
     * 计算机网络系列
     * 设计模式系列
         + [知识框架总述(三)【设计模式】](https://xiaoboji.blog.csdn.net/article/details/107478382)
