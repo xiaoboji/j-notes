@@ -2,6 +2,7 @@
     * [Java书单2020](https://github.com/xiaoboji/j-notes/tree/main/Books/Java书单2020.md)
  - 公共内容
     * [Github加速.md](https://github.com/xiaoboji/j-notes/tree/main/Common/github加速.md)
+    * [win10实用技巧](https://github.com/xiaoboji/j-notes/tree/main/Common/win10技巧.md)
    
  - 计算机基础
     * 数据结构与算法系列
