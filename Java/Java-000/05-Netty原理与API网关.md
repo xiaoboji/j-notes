@@ -44,7 +44,7 @@ Netty原理及API网关
         + channel handler2
 - Executor group(执行处理组)
 
-#### Netty重点对象
+#### Netty重点对象(BECH:Bootstrap—Eventloop-Channel-Handler)
 
 - Bootstrap 启动线程，开启socket
 - EventLoopGroup
@@ -177,4 +177,37 @@ nagel是一种优化策略
     * 过滤器，改变http的头，实现几个handler
 - gateway 3.0
     * 加一个Router，实现一个负载均衡
+
+架构设计
+
+- 设计：技术复杂度和业务复杂度
+- 抽象：概念清理、正确命名
+- 组合：组件之间的相互关系
+    
+### 六、Reactor模型到Netty NIO
+- 三种Reactor模型
+    * Reactor单线程模式
+    * 非主从Reactor多线程模式
+    * 主从Reactor多线程模式
+- Netty都可以支持
+    * Reactor单线程模式
+    ```
+    EventLoopGroup eventGroup = new NioEventLoopGroup(1);
+    ServerBootstrap severBootstrap = new ServerBootstrap();
+    serverBootstrap.group(eventGroup);    
+    ```
+    * 非主从Reactor多线程模式
+    ```
+    //默认两倍CPU核心数
+    EventLoopGroup eventGroup = new NioEventLoopGroup();   
+    ServerBootstrap severBootstrap = new ServerBootstrap();
+    serverBootstrap.group(eventGroup);
+    ```
+    * 主从Reactor多线程模式
+    ```
+    EventLoopGroup bossGroup = new NioEventLoopGroup();
+    EventLoopGroup workerGroup = new NioEventLoopGroup();
+    ServerBootstrap severBootstrap = new ServerBootstrap();
+    serverBootstrap.group(bossGroup,workerGroup);
+    ```
 
