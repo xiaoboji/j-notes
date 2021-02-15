@@ -58,5 +58,5 @@ public static void main(String[] args) {
     
 - 线程状态
 
-   ![avatar](https://github.com/xiaoboji/j-notes/tree/main/Pic/Java-000/线程状态.jpg)
+   ![avatar](./pic/线程状态.jpg)
    
