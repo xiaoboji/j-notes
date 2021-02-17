@@ -1,8 +1,8 @@
  - 书单
-    * [Java书单2020](https://github.com/xiaoboji/j-notes/tree/main/Books/Java书单2020.md)
+    * [Java书单2020](./Books/Java书单2020.md)
  - 公共内容
-    * [Github加速.md](https://github.com/xiaoboji/j-notes/tree/main/Common/github加速.md)
-    * [win10实用技巧](https://github.com/xiaoboji/j-notes/tree/main/Common/win10技巧.md)
+    * [Github加速.md](./Common/github加速.md)
+    * [win10实用技巧](./Common/win10技巧.md)
    
  - 计算机基础
     * 数据结构与算法系列
@@ -88,15 +88,15 @@
     * PostgreSQL系列    
         + [PostgreSql系列(一)分表实践，大数据量下分类型分月存储](https://xiaoboji.blog.csdn.net/article/details/109592955)
  - 工具使用
-     * Git 
-        + [Git常用命令](https://github.com/xiaoboji/j-notes/tree/main/Tools/Git/Git常用命令汇总.md)
-        + [SSH配置](https://github.com/xiaoboji/j-notes/tree/main/Tools/Git/SSH.md)
-        + [git-extras](https://github.com/xiaoboji/j-notes/blob/main/Tools/Git/git-extras插件.md)
+     * Git
+        + [Git常用命令](./Tools/Git/Git常用命令汇总.md)
+        + [SSH配置](./Tools/Git/SSH.md)
+        + [git-extras](./Tools/Git/git-extras插件.md)
      * Tomcat
-        + [Tomcat安装部署war包](https://github.com/xiaoboji/j-notes/tree/main/Tools/Tomcat/Tomcat安装部署war包.md)
+        + [Tomcat安装部署war包](./Tomcat/Tomcat安装部署war包.md)
      * Maven
-        + [maven配置代理](https://github.com/xiaoboji/j-notes/tree/main/Tools/Maven/maven配置代理.md)        
+        + [maven配置代理](./Tools/Maven/maven配置代理.md)        
      * IntelljJ IDEA
         + [IntelliJ IDEA 2020系列(一)【必须GET的常用调试技巧-基础篇】](https://xiaoboji.blog.csdn.net/article/details/106773433) 
      * 压测工具
-        + [superbenchmarker简介及使用](https://github.com/xiaoboji/j-notes/tree/main/Tools/superbenchmarker/sb.md)
+        + [superbenchmarker简介及使用](./Tools/superbenchmarker/sb.md)
