@@ -89,7 +89,7 @@
         + [PostgreSql系列(一)分表实践，大数据量下分类型分月存储](https://xiaoboji.blog.csdn.net/article/details/109592955)
  - 工具使用
      * Git 
-        + [Git常用命令](https://github.com/xiaoboji/j-notes/tree/main/Tools/Git/Git常用命令.md)
+        + [Git常用命令](https://github.com/xiaoboji/j-notes/tree/main/Tools/Git/Git常用命令汇总.md)
         + [SSH配置](https://github.com/xiaoboji/j-notes/tree/main/Tools/Git/SSH.md)
         + [git-extras](https://github.com/xiaoboji/j-notes/blob/main/Tools/Git/git-extras插件.md)
      * Tomcat
