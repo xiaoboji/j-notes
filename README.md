@@ -52,8 +52,8 @@
  - Java知识
     * Java进阶训练营
         + [05-Netty原理及API网关](https://github.com/xiaoboji/j-notes/blob/main/Java/Java-000/05-Netty原理与API网关.md) 
-        + [06-Java并发编程01](https://github.com/xiaoboji/j-notes/blob/main/Java/Java-000/06-Java并发编程.md) 
-        + [07-Java并发编程02](https://github.com/xiaoboji/j-notes/blob/main/Java/Java-000/06-Java并发编程02.md) 
+        + [06-Java并发编程01-线程基础和线程安全](https://github.com/xiaoboji/j-notes/blob/main/Java/Java-000/06-Java并发编程.md) 
+        + [07-Java并发编程02-线程池、JUC概述、锁和原子类](https://github.com/xiaoboji/j-notes/blob/main/Java/Java-000/07-Java并发编程02.md) 
     * Java源码学习
         + [HashMap总结及源码学习](https://github.com/xiaoboji/algorithm024/tree/main/Week_02/homework/HashMap.md)
     * JVM系列
