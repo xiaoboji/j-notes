@@ -105,5 +105,6 @@
         + [maven配置代理](./Tools/Maven/maven配置代理.md)        
      * IntelljJ IDEA
         + [IntelliJ IDEA 2020系列(一)【必须GET的常用调试技巧-基础篇】](https://xiaoboji.blog.csdn.net/article/details/106773433) 
+        + [Intellij IDEA常见错误](./Tools/Maven/maven配置代理.md)
      * 压测工具
         + [superbenchmarker简介及使用](./Tools/superbenchmarker/sb.md)

@@ -1,7 +1,7 @@
   maven配置代理
   ---
   
-```java
+```
   <proxies>
     <proxy>
       <id>my-proxy</id>
