@@ -19,6 +19,9 @@
         + [递归](https://github.com/xiaoboji/algorithm024/tree/main/Week_03/note/Recursion.md)
         + [分治](https://github.com/xiaoboji/algorithm024/tree/main/Week_03/note/DivideAndConquer.md)
         + [回溯](https://github.com/xiaoboji/algorithm024/tree/main/Week_03/note/Backtracking.md)
+        + [深度+广度优先遍历](https://github.com/xiaoboji/algorithm024/tree/main/Week_04/note/BfsDfs.md)
+        + [贪心算法](https://github.com/xiaoboji/algorithm024/tree/main/Week_04/note/Greedy.md)
+        + [二分查找](https://github.com/xiaoboji/algorithm024/tree/main/Week_04/note/BinarySearch.md)
     * 计算机网络系列
     * 设计模式系列
         + [知识框架总述(三)【设计模式】](https://xiaoboji.blog.csdn.net/article/details/107478382)
