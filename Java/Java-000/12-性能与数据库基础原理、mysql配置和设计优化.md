@@ -99,8 +99,48 @@
  - Mysql的索引原理
    * 数据是按页来分块的，当一个数据被用到是，其附近的数据通常也会被马上被使用
    * InnoDb使用B+树实现聚集索引
-   * 为什么一般表单数据不超过2000万，一页是16K，一个主键有6+8=14个字节，一层最多存储16000/14=1170.三层是
+   * 为什么一般表单数据不超过2000万，一页是16K，假设一个主键是bigint占8个字节，一个指针占6个字节，共计占6+8=14个字节，一层最多存储16000/14= 1170.一个块可以放1170个，一个b+树可以有十六个块，三层的b+树16*1170*1170=2190万
  4. Mysql配置优化
- - 
- 
- 
+ - 连接请求的变量
+   * max_connections--核心
+   * back_log
+   * wait_timeout和interative_timeout
+ - 缓存区变量
+   * key_buffer_size
+   * query_cache_size（查询缓存简称 QC)--核心
+   * max_connect_errors： 
+   * sort_buffer_size： 
+   * max_allowed_packet=32M
+   * join_buffer_size=2M
+   * thread_cache_size=300--核心
+ - 配置 Innodb 的几个变量
+   * innodb_buffer_pool_size
+   * innodb_flush_log_at_trx_commit
+   * innodb_thread_concurrency=0
+   * innodb_log_buffer_size
+   * innodb_log_file_size=50M
+   * innodb_log_files_in_group=3
+   * read_buffer_size=1M
+   * read_rnd_buffer_size=16M
+   * bulk_insert_buffer_size=64M
+   * binary log
+5. 数据库设计优化
+ - 如何恰当选择引擎？不一定全部用innodb
+ - 库表如何命名？尽量用英文
+ - 如何合理拆分宽表？
+ - 如何选择恰当数据类型：明确、尽量小
+   * char、varchar 的选择-限制大小
+   * （text/blob/clob）的使用问题？-尽量少用
+   * 文件、图片是否要存入到数据库？-现在不建议这么干
+   * 时间日期的存储问题？-建议存储时间戳，注意时区
+   * 数值的精度问题？-float有一定精度损失，用bigint或者varchar存储，再转换，适用于对精度要求很高的情况
+ - 是否使用外键、触发器？绝大多数都不建议使用外键和触发器
+ - 唯一约束和索引的关系？-唯一约束会创建一个索引
+ - 是否可以冗余字段？-如果需要就去创建吧
+ - 是否使用游标、变量、视图、自定义函数、存储过程？-不建议使用
+ - 自增主键的使用问题？-单机、分布式处理不一样
+ - 能够在线修改表结构（DDL 操作）？-没人用的时候再干
+ - 逻辑删除还是物理删除？-重要的数据都使用逻辑删除
+ - 要不要加 create_time,update_time 时间戳？-建议加，用于方便同步，定位问题等
+ - 数据库碎片问题？
+ - 如何快速导入导出、备份数据？-主存 一定要备份数据
