@@ -77,3 +77,7 @@
     * 事务链表，保存还未提交的事务，事务提交则会从链表中摘除
     * Read view: 每个 SQL 一个, 包括 rw_trx_ids, low_limit_id, up_limit_id, low_limit_no 等 
     * 回滚段: 通过 undo log 动态构建旧版本数据   
+ - 数据库死锁的两个办法
+    * 超时
+    * 强杀
+    
