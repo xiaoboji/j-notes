@@ -3,7 +3,6 @@
  - 公共内容
     * [Github加速.md](./Common/github加速.md)
     * [win10实用技巧](./Common/win10技巧.md)
-   
  - 计算机基础
     * 数据结构与算法系列
         + [leetcode刷题记录](https://github.com/xiaoboji/j-leetcode)
@@ -53,6 +52,8 @@
         + [23种设计模式总结篇【理解及应用】](https://xiaoboji.blog.csdn.net/article/details/109993836)
  
  - Java知识
+    * 面试总结
+        + [资深Java工程师知识图谱](./Java/pic/资深Java工程师知识图谱.jpeg) 
     * Java进阶训练营
         + [01-JVM基础内存模型、字节码、类加载器和常用参数](./Java/Java-000/01-JVM基础内存模型、字节码、类加载器和常用参数.md)
         + [02-JVM常用命令行工具和GC策略](./Java/Java-000/02-JVM常用命令行工具和GC策略.md)
