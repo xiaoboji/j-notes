@@ -80,4 +80,58 @@
  - 数据库死锁的两个办法
     * 超时
     * 强杀
-    
+2. DB和SQL优化
+ - 写入优化
+   * 大批量写入的优化
+   * PreparedStatement 减少 SQL 解析,都是用？代替
+   * Multiple Values/Add Batch 减少交互
+   * Load Data，直接导入
+   * 索引和约束问题
+ - 数据更新
+   * 数据的范围更新
+   * 注意 GAP Lock 的问题
+   * 导致锁范围扩大
+ - 模糊查询
+   * Like 的问题--只支持前缀匹配 前面%是不支持的
+   * 前缀匹配
+   * 否则不走索引，索引直走那几个常见的字段，大批量的走全文检索，特别热的数据，放到redis里
+   * 全文检索
+   * solr/ES
+ - 连接查询
+   * 连接查询优化
+   * 驱动表的选择问题
+   * 避免笛卡尔积
+ - 索引失败
+   * NULL，not，not in，函数等
+   * 减少使用 or，可以用 union（注意 union all 的区别），以及前面提到的like
+   * 大数据量下，放弃所有条件组合都走索引的幻想，出门左拐“全文检索”
+   * 必要时可以使用 force index 来强制查询走某个索引
+ - 查询 SQL 到底怎么设计？
+   * 查询数据量和查询次数的平衡
+   * 避免不必须的大量重复数据传输
+   * 避免使用临时文件排序或临时表
+   * 分析类需求，可以用汇总表
+3.常见常见分析
+ - 怎么实现主键 ID
+   * 自增
+   * sequence
+   * 模拟 seq
+   * UUID
+   * 时间戳/随机数
+   * snowflake
+ - 高效分页
+   * 分页：count/pageSize/pageNum, 带条件的查询语句
+   * 常见实现-分页插件：使用查询 SQL，嵌套一个 count，性能的坑？
+   * 改进一下1，重写 count
+   * 大数量级分页的问题，limit 100000,20
+   * 改进一下2，反序
+   * 继续改进3，技术向：带 id， - 继续改进4，需求向：非精确分页
+   * 所有条件组合？ 索引？
+ - 乐观锁与悲观锁
+   * select * from xxx for update
+     update xxx
+     commit;
+     意味着什么？
+   * select * from xxx
+     update xxx where value=oldValue
+     为什么叫乐观锁
