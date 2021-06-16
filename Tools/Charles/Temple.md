@@ -14,6 +14,11 @@
  - 视图
     - tructure/结构视图，将网络请求按访问的域名分类，比如某个域名下有n个资源请求，那么所有此域名下的请求都会在这里做一个详细的分类；
     - Sequence/序列视图，将网络请求按访问的时间排序，按照你的电脑的发送请求顺序进行。有时候请求多了会看不过来，Charles 提供了一个简单的 Filter 功能，可以输入关键字来快速筛选出 URL 中带指定关键字的网络请求。  
+ - Android7.0以上配置证书的问题
+   - Android高版本配置完之后，会出现如下错误，需要安装包增加权限配置或者root手机修改配置解决
+   ![avatar](./pic/Android7.0error.png)
+   - [Charles 在 Android 7.0 上会 SSL handshake failed](https://zhuanlan.zhihu.com/p/48255523)   
  - 参考链接
     - [Mac环境下使用charles进行https抓包分析](https://blog.csdn.net/samuelandkevin/article/details/95767434)
     - [mac下charles使用简介](https://www.jianshu.com/p/82f63277d50f)
+    - [Charles-Mac安装、配置及苹果手机安装证书](https://www.cnblogs.com/lilyo/p/11947625.html)
