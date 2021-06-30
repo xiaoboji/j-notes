@@ -1,0 +1,15 @@
+- String相关命令
+    - set name bobook
+    - get name
+    - exists name
+    - del name
+    - set name1 bobook1
+    - mget name name # 返回一个列表
+    - mset name2 bobook2 name3 bobook3 # 批量增加
+    - expire name 5 # 5S后过期
+    - setex name 5 bobook # 等价于set + expire
+    - setnx name bobook # 如果name不存在就执行set创建，存在则创建不成功
+    - set age 30
+    - incr age # 自增1，如果超过了最大数字，会报错
+    - incrby age 5 # 自增5
+    - incrby age -5 # 自减5
