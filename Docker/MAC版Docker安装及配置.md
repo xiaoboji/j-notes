@@ -28,4 +28,4 @@
 vim /Users/jixiaobo/.docker/daemon.json
 ```
 
-使用命令行：docker info查看镜像加速配置信息
+使用命令行：docker info查看镜像加速配置信息，如查到镜像地址信息，则无问题
